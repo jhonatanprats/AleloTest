@@ -1,0 +1,25 @@
+package TestCorreios.Alelo;
+
+import cucumber.api.java.en.*;
+
+public class CorreiosSteps {
+	
+	@Given("^que eu acesse o site dos correios$")
+	public void que_eu_acesse_o_site_dos_correios() throws Throwable {
+
+
+	}
+
+	@When("^eu realizar a pesquisa do \"([^\"]*)\"$")
+	public void eu_realizar_a_pesquisa_do(String arg1) throws Throwable {
+
+
+	}
+
+	@Then("^irei printar o valor retornado pela pesquisa$")
+	public void irei_printar_o_valor_retornado_pela_pesquisa() throws Throwable {
+
+
+	}
+
+}

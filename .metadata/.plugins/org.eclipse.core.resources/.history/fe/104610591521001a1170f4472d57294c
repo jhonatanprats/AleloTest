@@ -1,0 +1,11 @@
+package TestCorreios.Alelo;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class CorreiosElementPage {
+	
+	@FindBy(css = "#Geral > div > div > span:nth-child(3) > label > input")
+	protected WebElement inputCEP;
+
+}

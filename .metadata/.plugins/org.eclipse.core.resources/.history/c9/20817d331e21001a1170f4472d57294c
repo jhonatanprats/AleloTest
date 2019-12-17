@@ -1,0 +1,13 @@
+#Author: jhonatanprates@hotmail.com
+Feature: Pesquisar CEP no site dos Correios
+  Eu quero realizar a pesquisa de CEP e printar ele em tela
+
+  Scenario Outline: Acessar e Printar pesquisa do CEP no site dos correios
+    Given que eu acesse o site dos correios
+    When eu realizar a pesquisa do "<cep>"
+    Then irei printar o valor retornado pela pesquisa
+
+    Examples: 
+      | pesquisa          |
+      |          03161080 |
+      | Rua Santo Antonio |

@@ -1,0 +1,8 @@
+package TestCorreios.Alelo;
+
+public class CorreiosElementPage {
+	
+	@FindBy(linkText = "Simular Multibanco")
+	protected WebElement telaSimularMultibanco;
+
+}

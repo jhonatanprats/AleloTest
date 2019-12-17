@@ -1,0 +1,13 @@
+package TestCorreios.Alelo;
+
+import org.junit.runner.RunWith;
+import cucumber.api.CucumberOptions;
+
+@RunWith (CucumberOptions.class)
+	@CucumberOptions(plugin = {"pretty", "html:target/cucumber-html-report"},
+					 features = "src/test/java/TestCorreios/Alelo/Correios.feature",
+					 glue = { "" }, monochrome = true, dryRun = false)
+
+public class CorreiosTest {
+
+}

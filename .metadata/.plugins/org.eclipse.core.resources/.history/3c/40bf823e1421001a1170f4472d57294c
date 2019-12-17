@@ -1,0 +1,11 @@
+package TestCorreios.Alelo;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class CorreiosElementPage {
+	
+	@FindBy(linkText = "Simular Multibanco")
+	protected WebElement telaSimularMultibanco;
+
+}

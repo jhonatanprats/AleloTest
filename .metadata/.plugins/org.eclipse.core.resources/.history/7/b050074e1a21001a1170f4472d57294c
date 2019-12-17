@@ -1,0 +1,36 @@
+package TestCorreios.Alelo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+
+public class CorreiosPage extends CorreiosElementPage{
+	
+	public CorreiosPage() {
+		PageFactory.initElements(TestRule.getDriver(), this);
+	}
+	
+	public void abrir_url() {
+		TestRule.getDriver().navigate().to("http://www.buscacep.correios.com.br/sistemas/buscacep/buscaCepEndereco.cfm");
+	}
+	
+	public void buscarCep (String cep) throws InterruptedException {
+		
+		this.inputCEP.sendKeys(cep);
+		
+		this.pesquisarCEP.click();
+		
+		Thread.sleep(5000);
+	}
+	
+	public void imprimirResultado () {
+		
+		int i = 1;
+		while (i > 1){
+			
+			TestRule.getDriver().findElement(By.cssSelector("table>tbody>tr")
+			
+		}
+		
+	}
+
+}
